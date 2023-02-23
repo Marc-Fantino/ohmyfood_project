@@ -1,0 +1,349 @@
+@charset "UTF-8";
+/*principal*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "roboto", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  line-height: 1;
+  font-family: "roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+header img {
+  width: 50%;
+  height: 50%;
+}
+
+footer {
+  background-color: rgb(77, 73, 73);
+}
+
+footer h2 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-size: large;
+}
+
+footer li {
+  font-size: 12px;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+/************display*******/
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.block {
+  display: block;
+}
+
+/***********Titre*********/
+h2 {
+  padding-left: 20px;
+}
+
+/********espacement*******/
+.div_centrer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon_espace {
+  padding-right: 10px;
+}
+
+.margin_top {
+  margin-top: 20px;
+}
+
+.margin_left {
+  margin-left: 200px;
+}
+
+.padding_element {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.padding_element_text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.padding_section_haut {
+  padding-top: 40px;
+}
+
+.padding_espacement_bas {
+  padding-bottom: 40px;
+}
+
+.border_shadow {
+  box-shadow: 2px -2px rgb(209, 205, 205);
+}
+
+/**************background et police**************/
+.background_color_light_gray {
+  background-color: rgb(241, 240, 240);
+}
+
+.background_color_gray {
+  background-color: rgb(209, 205, 205);
+}
+
+.background_color_dark_gray {
+  background-color: rgb(77, 73, 73);
+}
+
+.background_color_green {
+  background-color: #99e2d0;
+}
+
+.cercle_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356DC;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+.police_white {
+  color: white;
+}
+
+.police_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.police_text_gras {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.police_text {
+  font-size: 1.2rem;
+}
+
+.police_button {
+  font-weight: 500;
+}
+
+.text_align_center {
+  text-align: center;
+}
+
+/****button********/
+.raduis {
+  border-radius: 30px;
+  border: none;
+}
+
+.btn_menu {
+  background: linear-gradient(4deg, rgb(147, 86, 220) 21%, rgb(255, 121, 218) 73%);
+}
+
+.position_btn {
+  margin-left: -30px;
+}
+
+/***carte**********/
+.carte {
+  background-color: white;
+  border-radius: 20px;
+  width: 200px;
+  height: 250px;
+}
+
+.carte_image {
+  width: 200px;
+  height: 200px;
+  min-width: 290px;
+}
+
+.carte_image img {
+  border-radius: 20px 20px 0px 0;
+  width: 100%;
+}
+
+.carte_body {
+  width: 200px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.z_index1 {
+  position: absolute;
+  z-index: 1;
+}
+
+.z_index2 {
+  position: absolute;
+  z-index: 2;
+}
+
+/******media format téléphone */
+@media only screen and (min-width: 768px) {
+  header {
+    justify-content: center;
+  }
+  header div {
+    display: flex;
+  }
+  .Fonctionnement_button button {
+    width: 90%;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
