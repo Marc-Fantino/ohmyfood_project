@@ -1,10 +1,14 @@
 header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
   }
   
   header img {
     width: 50%;
     height: 50%;
+  }
+  header i {
+  
+  padding-right: 70px;
   }

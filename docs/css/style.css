@@ -1,5 +1,153 @@
 @charset "UTF-8";
 /*principal*/
+/**************background et police**************/
+.border_bottom {
+  border-bottom: 3px solid #99E2D0;
+  width: 30px;
+  padding-left: 20px;
+}
+
+.background_color_light_gray {
+  background-color: rgb(241, 240, 240);
+}
+
+.background_color_gray {
+  background-color: rgb(209, 205, 205);
+}
+
+.background_color_dark_gray {
+  background-color: rgb(77, 73, 73);
+}
+
+.background_color_green {
+  background-color: #99E2D0;
+}
+
+.police_white {
+  color: white;
+}
+
+.police_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.police_text_gras {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.police_text {
+  font-size: 1.2rem;
+}
+
+.police_button {
+  font-weight: 500;
+}
+
+.text_align_center {
+  text-align: center;
+}
+
+/****button********/
+button {
+  width: 235px;
+  height: 50px;
+}
+
+.raduis {
+  border-radius: 30px;
+  border: none;
+}
+
+.btn_menu {
+  background: linear-gradient(4deg, #9356DC 21%, #FF79DA 73%);
+}
+
+.position_btn {
+  margin-left: -30px;
+}
+
+.cercle_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356DC;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+/********espacement*******/
+.div_centrer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu_div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon_espace {
+  padding-right: 10px;
+}
+
+.margin_top_bottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.margin_left {
+  margin-left: 200px;
+}
+
+.padding_element {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.padding_element_text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.padding_section_haut {
+  padding-top: 40px;
+}
+
+.padding_espacement_bas {
+  padding-bottom: 40px;
+}
+
+/************display*******/
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.block {
+  display: block;
+}
+
+/**************position**************/
+.z_index1 {
+  position: absolute;
+  z-index: 1;
+}
+
+.z_index2 {
+  position: absolute;
+  z-index: 2;
+}
+
+/***********Titre*********/
 html,
 body,
 div,
@@ -139,7 +287,7 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 20px;
 }
 
@@ -148,187 +296,102 @@ header img {
   height: 50%;
 }
 
+header i {
+  padding-right: 70px;
+}
+
 footer {
   background-color: rgb(77, 73, 73);
+  width: 100%;
 }
 
 footer h2 {
   padding-top: 15px;
   padding-bottom: 10px;
-  padding-left: 30px;
+  padding-left: 20px;
   font-size: large;
 }
 
 footer li {
   font-size: 12px;
   padding-top: 5px;
-  padding-left: 30px;
+  padding-left: 20px;
   padding-bottom: 10px;
 }
 
-/************display*******/
-.flex {
-  display: flex;
-  justify-content: center;
+footer li i {
+  padding-right: 10px;
 }
 
-.block {
-  display: block;
+body {
+  width: 100%;
+  height: 100vh;
 }
 
-/***********Titre*********/
 h2 {
   padding-left: 20px;
-}
-
-/********espacement*******/
-.div_centrer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.icon_espace {
-  padding-right: 10px;
-}
-
-.margin_top {
-  margin-top: 20px;
-}
-
-.margin_left {
-  margin-left: 200px;
-}
-
-.padding_element {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.padding_element_text {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.padding_section_haut {
-  padding-top: 40px;
-}
-
-.padding_espacement_bas {
-  padding-bottom: 40px;
 }
 
 .border_shadow {
   box-shadow: 2px -2px rgb(209, 205, 205);
 }
 
-/**************background et police**************/
-.background_color_light_gray {
-  background-color: rgb(241, 240, 240);
-}
-
-.background_color_gray {
-  background-color: rgb(209, 205, 205);
-}
-
-.background_color_dark_gray {
-  background-color: rgb(77, 73, 73);
-}
-
-.background_color_green {
-  background-color: #99e2d0;
-}
-
-.cercle_btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #9356DC;
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-}
-
-.police_white {
-  color: white;
-}
-
-.police_title {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.police_text_gras {
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding-bottom: 5px;
-}
-
-.police_text {
-  font-size: 1.2rem;
-}
-
-.police_button {
-  font-weight: 500;
-}
-
-.text_align_center {
-  text-align: center;
-}
-
-/****button********/
-.raduis {
-  border-radius: 30px;
-  border: none;
-}
-
-.btn_menu {
-  background: linear-gradient(4deg, rgb(147, 86, 220) 21%, rgb(255, 121, 218) 73%);
-}
-
-.position_btn {
-  margin-left: -30px;
-}
-
-/***carte**********/
+/********carte_menu**********/
 .carte {
-  background-color: white;
   border-radius: 20px;
-  width: 200px;
+  width: 300px;
   height: 250px;
 }
 
 .carte_image {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
   min-width: 290px;
 }
 
 .carte_image img {
   border-radius: 20px 20px 0px 0;
-  width: 100%;
+  width: 300px;
+  height: 150px;
 }
 
 .carte_body {
-  width: 200px;
-  padding: 5px;
+  width: 280px;
+  padding-left: 10px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-.z_index1 {
-  position: absolute;
-  z-index: 1;
+/*************menu à la française**********/
+.menu_img {
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  position: relative;
+}
+.menu_img img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.z_index2 {
-  position: absolute;
+#carte_menu {
+  border-radius: 20px 20px 0px 0px;
+  margin-top: -40px;
+  width: 100%;
   z-index: 2;
+}
+
+#plat {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 /******media format téléphone */
@@ -343,6 +406,26 @@ h2 {
     width: 90%;
     font-size: 15px;
     font-weight: bolder;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body {
+    width: 100%;
+  }
+  #Fonctionnement h2 {
+    text-align: center;
+  }
+  #Fonctionnement div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #Fonctionnement div button {
+    width: 300px;
+  }
+  #Restaurants h2 {
+    text-align: center;
   }
 }
 
