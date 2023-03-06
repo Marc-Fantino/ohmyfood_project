@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*principal*/
-/**************background et police**************/
 .border_bottom {
-  border-bottom: 3px solid #99E2D0;
-  width: 30px;
-  padding-left: 20px;
+  border-bottom: 3px solid #99e2d0;
+  width: 40px;
+  margin-left: 20px;
+  padding-top: 30px;
 }
 
 .background_color_light_gray {
@@ -20,14 +20,10 @@
 }
 
 .background_color_green {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
 
-.police_white {
-  color: white;
-}
-
-.police_title {
+.titre_police {
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -42,27 +38,30 @@
   font-size: 1.2rem;
 }
 
-.police_button {
+.button_police {
   font-weight: 500;
+  font-size: 1.1rem;
+  color: white;
 }
 
 .text_align_center {
   text-align: center;
 }
 
-/****button********/
 button {
   width: 235px;
   height: 50px;
-}
-
-.raduis {
   border-radius: 30px;
   border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 2px 4px rgb(209, 205, 205);
 }
 
 .btn_menu {
-  background: linear-gradient(4deg, #9356DC 21%, #FF79DA 73%);
+  background: linear-gradient(4deg, #9356dc 21%, #ff79da 73%);
 }
 
 .position_btn {
@@ -73,81 +72,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 50%;
   width: 25px;
   height: 25px;
 }
 
-/********espacement*******/
-.div_centrer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.menu_div {
-  display: flex;
-  justify-content: space-between;
-}
-
-.icon_espace {
-  padding-right: 10px;
-}
-
-.margin_top_bottom {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.margin_left {
-  margin-left: 200px;
-}
-
-.padding_element {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.padding_element_text {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.padding_section_haut {
-  padding-top: 40px;
-}
-
-.padding_espacement_bas {
-  padding-bottom: 40px;
-}
-
-/************display*******/
-.flex {
-  display: flex;
-  justify-content: center;
-}
-
-.block {
-  display: block;
-}
-
-/**************position**************/
-.z_index1 {
-  position: absolute;
-  z-index: 1;
-}
-
-.z_index2 {
-  position: absolute;
-  z-index: 2;
-}
-
-/***********Titre*********/
 html,
 body,
 div,
@@ -282,7 +212,74 @@ table {
 
 body {
   line-height: 1;
-  font-family: "roboto", sans-serif;
+}
+
+/********espacement*******/
+.div_centrer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  justify-content: space-between;
+}
+.div_centrer button {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.menu_div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon_espace {
+  padding-right: 10px;
+}
+
+.margin_top_bottom {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.margin_left {
+  margin-left: 200px;
+}
+
+.padding_element {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.padding_element_text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/************display*******/
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.block {
+  display: block;
+}
+
+/**************position**************/
+.z_index1 {
+  position: absolute;
+  z-index: 1;
+}
+
+.z_index2 {
+  position: absolute;
+  z-index: 2;
 }
 
 header {
@@ -290,50 +287,50 @@ header {
   justify-content: flex-start;
   padding: 20px;
 }
-
 header img {
   width: 50%;
   height: 50%;
 }
-
 header i {
   padding-right: 70px;
+}
+
+.accueil {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 footer {
   background-color: rgb(77, 73, 73);
   width: 100%;
+  color: white;
 }
-
 footer h2 {
   padding-top: 15px;
   padding-bottom: 10px;
   padding-left: 20px;
   font-size: large;
 }
-
 footer li {
   font-size: 12px;
   padding-top: 5px;
   padding-left: 20px;
   padding-bottom: 10px;
 }
-
-footer li i {
+footer i {
   padding-right: 10px;
 }
 
 body {
   width: 100%;
   height: 100vh;
+  font-family: "roboto", sans-serif;
 }
 
 h2 {
   padding-left: 20px;
-}
-
-.border_shadow {
-  box-shadow: 2px -2px rgb(209, 205, 205);
+  padding-top: 30px;
 }
 
 /********carte_menu**********/
@@ -393,6 +390,10 @@ h2 {
   margin-right: 10px;
   margin-top: 10px;
 }
+#plat:hover {
+  background-color: #99e2d0;
+  transform: translateY(20px, 20px);
+}
 
 /******media format téléphone */
 @media only screen and (min-width: 768px) {
@@ -401,11 +402,6 @@ h2 {
   }
   header div {
     display: flex;
-  }
-  .Fonctionnement_button button {
-    width: 90%;
-    font-size: 15px;
-    font-weight: bolder;
   }
 }
 @media only screen and (min-width: 992px) {

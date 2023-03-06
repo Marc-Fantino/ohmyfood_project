@@ -1,23 +1,20 @@
-
 footer {
-    background-color: rgb(77, 73, 73);
-    width: 100%;
-} 
-
-footer h2 {
+  background-color: rgb(77, 73, 73);
+  width: 100%;
+  color: white;
+  h2 {
     padding-top: 15px;
     padding-bottom: 10px;
     padding-left: 20px;
     font-size: large;
   }
-  
-  footer li {
+  li {
     font-size: 12px;
     padding-top: 5px;
     padding-left: 20px;
     padding-bottom: 10px;
   }
-  
-  footer li i {
+  i {
     padding-right: 10px;
   }
+}

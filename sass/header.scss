@@ -1,14 +1,17 @@
 header {
-    display: flex;
-    justify-content: flex-start;
-    padding: 20px;
-  }
-  
-  header img {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  img {
     width: 50%;
     height: 50%;
   }
-  header i {
-  
-  padding-right: 70px;
+  i {
+    padding-right: 70px;
   }
+}
+.accueil {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
