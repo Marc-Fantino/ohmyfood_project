@@ -1,0 +1,23 @@
+@media only screen and (min-width: 992px) {
+    body {
+      width: 100%;
+    }
+  
+    #Fonctionnement h2 {
+      text-align: center;
+    }
+  
+    #Fonctionnement div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      button {
+        width: 300px;
+      }
+    }
+  
+    #Restaurants h2 {
+      text-align: center;
+    }
+  }

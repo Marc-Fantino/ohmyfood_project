@@ -1,12 +1,4 @@
-@charset "UTF-8";
 /*principal*/
-.border_bottom {
-  border-bottom: 3px solid #99e2d0;
-  width: 40px;
-  margin-left: 20px;
-  padding-top: 30px;
-}
-
 .background_color_light_gray {
   background-color: rgb(241, 240, 240);
 }
@@ -59,13 +51,19 @@ button {
   padding-right: 15px;
   box-shadow: 2px 4px rgb(209, 205, 205);
 }
+button:hover {
+  box-shadow: 5px 6px rgb(209, 205, 205);
+}
+button:hover i {
+  color: #9356dc;
+}
+
+#Fonctionnement button {
+  border-radius: 15px 15px 15px 15px;
+}
 
 .btn_menu {
   background: linear-gradient(4deg, #9356dc 21%, #ff79da 73%);
-}
-
-.position_btn {
-  margin-left: -30px;
 }
 
 .cercle_btn {
@@ -76,6 +74,7 @@ button {
   border-radius: 50%;
   width: 25px;
   height: 25px;
+  margin-left: -30px;
 }
 
 html,
@@ -229,6 +228,12 @@ body {
   font-weight: bolder;
 }
 
+.border_bottom {
+  border-bottom: 3px solid #99e2d0;
+  width: 40px;
+  margin-left: 20px;
+}
+
 .menu_div {
   display: flex;
   justify-content: space-between;
@@ -305,11 +310,34 @@ body {
   width: 280px;
   padding-left: 10px;
   padding-top: 20px;
-  display: flex;
+  position: relative;
   justify-content: space-between;
+}
+.carte_body i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carte_body .fas {
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.carte_body:hover .fas {
+  opacity: 1;
 }
 
 /*************Restaurant**********/
+#plat h2 {
+  margin-left: 20px;
+}
+#plat h2__border_bottom {
+  margin-left: 40px;
+}
+
 .menu_img {
   width: 100%;
   height: 300px;
@@ -331,7 +359,7 @@ body {
   z-index: 2;
 }
 
-#plat {
+.plat {
   background-color: white;
   padding: 20px;
   border-radius: 20px;
@@ -339,9 +367,10 @@ body {
   margin-right: 10px;
   margin-top: 10px;
 }
-#plat:hover {
-  background-color: #99e2d0;
-  transform: translateY(20px, 20px);
+.plat h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 
 header {
@@ -387,7 +416,7 @@ footer i {
 body {
   width: 100%;
   height: 100vh;
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h2 {
@@ -399,10 +428,13 @@ a {
   list-style: none;
   text-decoration: none;
   cursor: pointer;
-  color: black;
+  color: inherit;
 }
 
-/******media format téléphone */
+h1 h2 h3 {
+  font-family: "Shrikhand", cursive;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     justify-content: center;

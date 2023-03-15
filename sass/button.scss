@@ -8,8 +8,18 @@ button {
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: 2px 4px rgb(209, 205, 205);
+    &:hover {
+    box-shadow: 5px 6px rgb(209, 205, 205);
+    i {
+    color: $violet;
+    }
+    
+    }
   }
   
+  #Fonctionnement button {
+  border-radius: 15px 15px 15px 15px;
+  }
   .btn_menu {
     background: linear-gradient(
       4deg,
@@ -17,10 +27,7 @@ button {
      $rose 73%
     );
   }
-  .position_btn {
-    margin-left: -30px;
-  }
-  
+
   .cercle_btn {
     display: flex;
     align-items: center;
@@ -29,4 +36,5 @@ button {
     border-radius: 50%;
     width: 25px;
     height: 25px;
+    margin-left: -30px;
   }

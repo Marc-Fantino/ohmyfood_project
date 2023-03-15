@@ -5,12 +5,6 @@ $rose: #ff79da;
 $bleu_clair: #99e2d0;
 
 
-.border_bottom {
-  border-bottom: 3px solid $bleu_clair;
-  width: 40px;
-  margin-left: 20px;
-  padding-top: 30px;
-}
 .background_color_light_gray {
   background-color: rgb(241, 240, 240);
 }
@@ -23,4 +17,3 @@ $bleu_clair: #99e2d0;
 .background_color_green {
   background-color: $bleu_clair;
 }
-
